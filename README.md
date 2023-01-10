@@ -14,7 +14,7 @@
   - Abrir carpeta del proyecto e instalar las dependencias con "npm i"
   - Entrar al proyecto y abrir el archivo \src\sistema\server.js
   - Se debe modificar las variables con la ruta del servidor y el puerto (en el caso que lo tenga)
-    - host: "https://bp-pokemons.herokuapp.com", // DIRECCION DEL SERVIDOR
+    - host: "https://tribu-ti-staffing-desarrollo-afangwbmcrhucqfh.z01.azurefd.net/pkm-msa-evaluation/pokemon", // DIRECCION DEL SERVIDOR
     - puerto: "", // PUERTO DEL SERVIDOR EN EL CASO QUE LO TENGA
   - Ejecutar el proyecto con "npm start"
 
