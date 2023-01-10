@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { BrowserRouter} from "react-router-dom";
+import BarraBusqueda from "./components/BarraBusqueda";
+import Notificacion from "./components/notificacion/Notificacion";
+import TablaPokemon from "./components/TablaPokemon";
+import { PokemonProvider } from "./context/PokemonContext";
+import Rutas from "./sistema/Rutas";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main>
+        <BrowserRouter>
+          <PokemonProvider>
+            <Notificacion />
+            <BarraBusqueda />
+            <TablaPokemon />
+              <Rutas />
+          </PokemonProvider>
+        </BrowserRouter>
+      </main>
     </div>
   );
 }
